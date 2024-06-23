@@ -13,12 +13,12 @@ Face recognition is an algorithm to identify and differentiate human faces based
 
 ## Getting started : 
 1. If the user decides to use Kaggle, creation of an account and identity verification in the settings are required to run the notebooks using accelerators. 
-2. Uploading the dataset and validation images:
+2. Uploading the dataset and validation images on Kaggle:
     - Select 'Datasets' from the Kaggle menu and select 'New Dataset'.
     - upload all the files ('Images' folder, list_attribute.txt, and validation_images).
     - configure the dataset title and visibility.
     - check the files and configurations, then select 'Create' to finish creating the new dataset. After that, it can be called from the 'Input' menu of a notebook.
-3. The steps to open and run the notebooks on Kaggle will be explained below.
+3. The steps to open and run the notebooks on Kaggle:
     - Select the large '+' sign in the Kaggle menu and select 'New Notebook'.
     - select 'File' in the toolbar and select 'Import Notebook'. a prompt to upload a file will then be shown.
     - upload a single desired notebook from the 'notebooks/Models..' folders.
