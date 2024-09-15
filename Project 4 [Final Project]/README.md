@@ -8,15 +8,15 @@ the [dataset](https://www.seanoe.org/data/00743/85472/) used in this project is 
 the completion of this project was eased through the availability and publicly allowed use of the [image-segmentation-keras](https://github.com/divamgupta/image-segmentation-keras) library by divam gupta.
 
 ## Links :
-1. [Presentation Slides](https://www.canva.com/design/DAGMnc-UYDY/rh_0MRh2Wvog_BYK2Fgc5w/edit)
-2. [Project timeline and results sheet](https://docs.google.com/spreadsheets/d/19r60rSKzbD9wwQJAUAhbfaILK345ghxz2j73iuzR9q8/edit?usp=sharing)
-3. [Hugging Face Interface](https://huggingface.co/spaces/eurekalabdawara/computervision-keras-segmentation)
+1. [Presentation Slides](https://www.canva.com/design/DAGQGo2w1VY/dxAXfBKHrBVpZF4kF-vXUg/view?utm_content=DAGQGo2w1VY&utm_campaign=designshare&utm_medium=link&utm_source=editor)
+2. [Project timeline and results sheet](https://docs.google.com/spreadsheets/d/1adIJcgWbDG36tMfm9UOGmAXjsSNw-R6rneAdyVGLLpA/edit?usp=sharing)
+3. [Hugging Face Interface](https://huggingface.co/spaces/eurekalabdawara/beach-litter-segmentation-YOLOv8x)
 
 ## File Decriptions :
-1. Model Test notebooks : contains jupyter notebooks of the initial 9 models that were the combination of the 3 base models and 3 segmentation heads. It is divided into different folders based on the segmentation heads. All notebooks were run on Kaggle using the GPU T4 x2 accelerator.
-2. Resnet50-Unet Finetuning Notebooks : contains 4 jupyter notebooks with different finetuning parameters (mainly training image augmentation).
-3. dataset : contains the training-and-validation images-and-annotations for model training. this dataset is a prepped subset of the "Cityscapes" dataset.
-4. Gradio_inference (Gcolab).ipynb : is a notebook to run a gradio inference in google colaboratory (Gcolab) that utilizes the best finetuned ResNet50_U-Net model from our study to analyze images or videos.
+1. Dataset Format Examples : contains pictures of how the structure of the dataset should be. The ResNet50-Unet dataset structure is more flexible and hence the structure and folder names can safely be changed without any problems. Meanwhile, the YOLOv8-seg is more rigid when it comes to its dataset structure, hence the structure and folder names should be followed as to avoid unnecessary problems when training.
+2. Notebooks : contains the notebook for training the ResNet50-Unet and YOLOv8-seg models. Other than that, the mask pallete changer notebook to change the colorful palette of the original masks to grayscale, and the notebook to automatically create YOLOv8 annotations from masks are also provided. Users can freely change the parameters as they see fit. 
+3. Processed Masks : Contains the prepped masks already divided into train, validation, and test folders that was implemented in this project. Folders ending in '8classes' refer to the original beach litter dataset masks convertedd to grayscale. Meanwhile, folders ending in '3classes' refer to masks that focus only on the litters, resulting in (background, artificial litter, natural litter) class indexing.
+4. YOLOv8 Annotations : contains the prepped YOLOv8 annotations already divided into train, validation, and test folders.
 
 ## Getting started : 
 1. If the user decides to use Kaggle, creation of an account and identity verification in the settings are required to run the notebooks using accelerators. 
