@@ -21,13 +21,14 @@ the completion of this project was eased through the availability and publicly a
 ## Getting started : 
 1. If the user decides to use Kaggle, creation of an account and identity verification in the settings are required to run the notebooks using accelerators. 
 2. Uploading the dataset on Kaggle:
+    - Configure the structure and folder names in the user's local file manager. Then compress the file before uploading to avoid kaggle upload file amount limitations. 
     - Select 'Datasets' from the Kaggle menu and select 'New Dataset'.
-    - upload all the files ('dataset' folder).
-    - configure the dataset title and visibility.
-    - check the files and configurations, then select 'Create' to finish creating the new dataset. After that, it can be called from the 'Input' menu of a notebook.
+    - Upload the zip file.
+    - Configure the dataset title and visibility.
+    - Check the files and configurations, then select 'Create' to finish creating the new dataset. After that, it can be called from the 'Input' menu of a notebook.
 3. The steps to open and run the notebooks on Kaggle:
     - Select the large '+' sign in the Kaggle menu and select 'New Notebook'.
-    - select 'File' in the toolbar and select 'Import Notebook'. a prompt to upload a file will then be shown.
-    - upload a single desired notebook from either notebook folders.
-    - select the little arrow at the bottom right corner to reveal the notebook configurations. In the 'Input' section, add the previously created dataset. Also, configure the 'Session options' to the desired accelerator, and activate the 'Internet' option to allow downloads from the internet.
+    - Select 'File' in the toolbar and select 'Import Notebook'. a prompt to upload a file will then be shown.
+    - Upload a single desired notebook from either notebook folders.
+    - Select the little arrow at the bottom right corner to reveal the notebook configurations. In the 'Input' section, add the previously created dataset. Also, configure the 'Session options' to the desired accelerator, and activate the 'Internet' option to allow downloads from the internet.
     - depending on the user's dataset path, one will need to adjust the data path regarding the dataset location.
